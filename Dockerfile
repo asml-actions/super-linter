@@ -26,7 +26,7 @@ FROM yoheimuta/protolint:0.49.7 as protolint
 FROM ghcr.io/clj-kondo/clj-kondo:2024.03.13-alpine as clj-kondo
 FROM dart:3.3.4-sdk as dart
 
-FROM python:3.12.2-alpine3.19 as clang-format
+FROM python:3.12.3-alpine3.19 as clang-format
 
 RUN apk add --no-cache \
     build-base \
@@ -53,7 +53,7 @@ RUN cmake \
     && ninja clang-format \
     && mv /tmp/llvm-project/llvm/build/bin/clang-format /usr/bin
 
-FROM python:3.12.2-alpine3.19 as python-builder
+FROM python:3.12.3-alpine3.19 as python-builder
 
 RUN apk add --no-cache \
     bash
@@ -64,7 +64,7 @@ COPY dependencies/python/ /stage
 WORKDIR /stage
 RUN ./build-venvs.sh && rm -rfv /stage
 
-FROM python:3.12.2-alpine3.19 as npm-builder
+FROM python:3.12.3-alpine3.19 as npm-builder
 
 RUN apk add --no-cache \
     bash \
@@ -95,7 +95,7 @@ COPY TEMPLATES/.tflint.hcl /action/lib/.automation/
 # Initialize TFLint plugins so we get plugin versions listed when we ask for TFLint version
 RUN tflint --init -c /action/lib/.automation/.tflint.hcl
 
-FROM python:3.12.2-alpine3.19 as base_image
+FROM python:3.12.3-alpine3.19 as base_image
 
 LABEL com.github.actions.name="Super-Linter" \
     com.github.actions.description="Super-linter is a ready-to-run collection of linters and code analyzers, to help validate your source code." \
