@@ -23,7 +23,7 @@ FROM rhysd/actionlint:1.7.1 as actionlint
 FROM scalameta/scalafmt:v3.8.1 as scalafmt
 FROM zricethezav/gitleaks:v8.18.4 as gitleaks
 FROM yoheimuta/protolint:0.50.5 as protolint
-FROM ghcr.io/clj-kondo/clj-kondo:2024.05.24-alpine as clj-kondo
+FROM ghcr.io/clj-kondo/clj-kondo:2024.08.01-alpine as clj-kondo
 FROM dart:3.4.4-sdk as dart
 
 FROM python:3.12.4-alpine3.19 as clang-format
