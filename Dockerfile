@@ -12,7 +12,7 @@ FROM alpine/terragrunt:1.10.1 as terragrunt
 FROM dotenvlinter/dotenv-linter:3.3.0 as dotenv-linter
 FROM ghcr.io/terraform-linters/tflint:v0.54.0 as tflint
 FROM ghcr.io/yannh/kubeconform:v0.6.7 as kubeconfrm
-FROM golang:1.23.4-alpine as golang
+FROM golang:1.23.5-alpine as golang
 FROM golangci/golangci-lint:v1.63.4 as golangci-lint
 FROM hadolint/hadolint:v2.12.0-alpine as dockerfile-lint
 FROM hashicorp/terraform:1.10.4 as terraform
