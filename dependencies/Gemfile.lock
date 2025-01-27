@@ -36,7 +36,7 @@ GEM
     rack (3.1.8)
     rainbow (3.1.1)
     regexp_parser (2.10.0)
-    rubocop (1.69.2)
+    rubocop (1.70.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -69,10 +69,10 @@ GEM
       rubocop (~> 1.61)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
-    standard (1.43.0)
+    standard (1.44.0)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
-      rubocop (~> 1.69.1)
+      rubocop (~> 1.70.0)
       standard-custom (~> 1.0.0)
       standard-performance (~> 1.6)
     standard-custom (1.0.2)
@@ -92,7 +92,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rubocop (~> 1.69.2)
+  rubocop (~> 1.70.0)
   rubocop-github (~> 0.20.0)
   rubocop-minitest (~> 0.35.1)
   rubocop-performance (~> 1.23.1)
