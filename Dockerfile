@@ -24,7 +24,7 @@ FROM scalameta/scalafmt:v3.8.3 as scalafmt
 FROM zricethezav/gitleaks:v8.23.3 as gitleaks
 FROM yoheimuta/protolint:0.53.0 as protolint
 FROM ghcr.io/clj-kondo/clj-kondo:2025.01.16-alpine as clj-kondo
-FROM dart:3.6.1-sdk as dart
+FROM dart:3.6.2-sdk as dart
 
 FROM python:3.13.1-alpine3.19 as clang-format
 
