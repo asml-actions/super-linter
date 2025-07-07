@@ -18,7 +18,7 @@ FROM hadolint/hadolint:v2.12.0-alpine as dockerfile-lint
 FROM hashicorp/terraform:1.12.0 as terraform
 FROM koalaman/shellcheck:v0.10.0 as shellcheck
 FROM mstruebing/editorconfig-checker:v3.3.0 as editorconfig-checker
-FROM mvdan/shfmt:v3.11.0 as shfmt
+FROM mvdan/shfmt:v3.12.0 as shfmt
 FROM rhysd/actionlint:1.7.7 as actionlint
 FROM scalameta/scalafmt:v3.9.8 as scalafmt
 FROM zricethezav/gitleaks:v8.27.2 as gitleaks
