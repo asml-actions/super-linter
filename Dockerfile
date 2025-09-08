@@ -22,7 +22,7 @@ FROM mvdan/shfmt:v3.12.0 as shfmt
 FROM rhysd/actionlint:1.7.7 as actionlint
 FROM scalameta/scalafmt:v3.9.9 as scalafmt
 FROM zricethezav/gitleaks:v8.28.0 as gitleaks
-FROM yoheimuta/protolint:0.55.6 as protolint
+FROM yoheimuta/protolint:0.56.4 as protolint
 FROM ghcr.io/clj-kondo/clj-kondo:2025.07.28-alpine as clj-kondo
 FROM dart:3.9.2-sdk as dart
 
