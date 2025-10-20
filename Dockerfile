@@ -8,7 +8,7 @@
 # Get dependency images as build stages #
 #########################################
 FROM tenable/terrascan:1.19.9 as terrascan
-FROM alpine/terragrunt:1.13.1 as terragrunt
+FROM alpine/terragrunt:1.13.4 as terragrunt
 FROM dotenvlinter/dotenv-linter:3.3.0 as dotenv-linter
 FROM ghcr.io/terraform-linters/tflint:v0.59.1 as tflint
 FROM ghcr.io/yannh/kubeconform:v0.7.0 as kubeconfrm
