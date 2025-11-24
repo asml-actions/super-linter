@@ -34,7 +34,7 @@ jobs:
       CONTAINER_IMAGE_TARGET: "${{ matrix.images.target }}"
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Set build metadata
         run: |
