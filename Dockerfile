@@ -13,7 +13,7 @@ FROM dotenvlinter/dotenv-linter:4.0.0 as dotenv-linter
 FROM ghcr.io/terraform-linters/tflint:v0.60.0 as tflint
 FROM ghcr.io/yannh/kubeconform:v0.7.0 as kubeconfrm
 FROM golang:1.25.5-alpine as golang
-FROM golangci/golangci-lint:v2.7.2 as golangci-lint
+FROM golangci/golangci-lint:v2.8.0 as golangci-lint
 FROM hadolint/hadolint:v2.14.0-alpine as dockerfile-lint
 FROM hashicorp/terraform:1.14.3 as terraform
 FROM koalaman/shellcheck:v0.11.0 as shellcheck
