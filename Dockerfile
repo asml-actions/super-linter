@@ -17,7 +17,7 @@ FROM golangci/golangci-lint:v2.7.2 as golangci-lint
 FROM hadolint/hadolint:v2.14.0-alpine as dockerfile-lint
 FROM hashicorp/terraform:1.15.5 as terraform
 FROM koalaman/shellcheck:v0.11.0 as shellcheck
-FROM mstruebing/editorconfig-checker:v3.6.0 as editorconfig-checker
+FROM mstruebing/editorconfig-checker:v3.7.0 as editorconfig-checker
 FROM mvdan/shfmt:v3.13.1 as shfmt
 FROM rhysd/actionlint:1.7.9 as actionlint
 FROM scalameta/scalafmt:v3.11.0 as scalafmt
