@@ -35,7 +35,7 @@
     "pug": "^3.0.4",
     "react": "^19.2.7",
     "react-dom": "^19.2.8",
-    "react-intl": "^10.1.22",
+    "react-intl": "^10.1.23",
     "react-redux": "^9.3.0",
     "react-router-dom": "^7.18.2",
     "renovate": "^44.14.7",
